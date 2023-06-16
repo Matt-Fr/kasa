@@ -46,35 +46,28 @@ const Page = () => {
     return (
       <>
         <section>
-          <div className="infoAcc-container">
-            <h2 className="infoAcc-container-title">{title}</h2>
-            <span className="infoAcc-container-location">{location}</span>
-            <div className="infoAcc-container-tagContainer">
+          <div>
+            <h2>{title}</h2>
+            <span>{location}</span>
+            <div>
               {tags.map((tag) => {
-                return (
-                  <span
-                    key={tag}
-                    className="infoAcc-container-tagContainer-tag"
-                  >
-                    {tag}
-                  </span>
-                );
+                return <span key={tag}>{tag}</span>;
               })}
             </div>
           </div>
           <div>
-            <div className="infoOwner-container">
+            <div>
               <span>{name}</span>
               <Image src={picture} alt={name} width={100} height={100} />
             </div>
-            <div className="infoOwner-starsContainer"></div>
+            <div></div>
           </div>
         </section>
-        <section className="collapseContainerAcc">
-          <div className="collapseContainerAcc-div">
+        <section>
+          <div>
             <Collapse title="Description" info={description} />
           </div>
-          <div className="collapseContainerAcc-div">
+          <div>
             <Collapse
               title="Équipements"
               info={equipments.map((equipement) => {
