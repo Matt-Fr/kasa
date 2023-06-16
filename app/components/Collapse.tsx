@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 interface CollapseProps {
   title: string;
-  info: string;
+  info: React.ReactNode;
 }
 
 const Collapse: React.FC<CollapseProps> = ({ title, info }) => {
