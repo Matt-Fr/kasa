@@ -6,11 +6,11 @@ import data from "./data.json";
 export default function Home() {
   return (
     <main>
-      <section className="homeHeader">
+      <section className="">
         <Image src={backgroundImg} alt="" width={5} height={5} />
-        <h1 className="homeHeader-title">Chez vous, partout et ailleurs</h1>
+        <h1 className="text-center">Chez vous, partout et ailleurs</h1>
       </section>
-      <section className="thumbContainer">
+      <section className="">
         {data.map((accommodation) => {
           const { id, title, cover } = accommodation;
 
