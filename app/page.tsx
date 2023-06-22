@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <section className="">
-        <Image src={backgroundImg} alt="" width={5} height={5} />
+        <Image src={backgroundImg} alt="" className="w-34" />
         <h1 className="text-center">Chez vous, partout et ailleurs</h1>
       </section>
       <section className="">
