@@ -5,10 +5,16 @@ import data from "./data.json";
 
 export default function Home() {
   return (
-    <main>
-      <section className="">
-        <Image src={backgroundImg} alt="" className="w-34" />
-        <h1 className="text-center">Chez vous, partout et ailleurs</h1>
+    <main className="flex flex-col">
+      <section className=" h-28 w-full relative flex items-center rounded-2xl overflow-hidden my-4">
+        <Image
+          src={backgroundImg}
+          alt="background image"
+          className=" h-full w-full object-cover contrast-[.60]"
+        />
+        <h1 className="absolute leading-6 w-48 text-[1.5rem] inset font text-white ml-5">
+          Chez vous, partout et ailleurs
+        </h1>
       </section>
       <section className="">
         {data.map((accommodation) => {

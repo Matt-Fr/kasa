@@ -11,13 +11,17 @@ const Header = () => {
             <Image
               src={logoKasa}
               alt="logo kasa"
-              className="  w-36 items-center"
+              className="w-36 items-center"
             ></Image>
           }
         </Link>
         <div>
-          <Link href="/">ACCUEIL</Link>
-          <Link href="/about">À PROPOS</Link>
+          <Link href="/" className="text-xs text-red">
+            ACCUEIL
+          </Link>
+          <Link href="/about" className="text-xs ml-3 text-red">
+            À PROPOS
+          </Link>
         </div>
       </nav>
     </header>
