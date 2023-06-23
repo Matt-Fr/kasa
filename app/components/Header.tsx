@@ -1,8 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logoKasa from "../assets/logoKasa.svg";
+import { usePathname } from "next/navigation";
+
 const Header = () => {
+  const currentRoute = usePathname();
+
   return (
     <header>
       <nav className="flex justify-between items-center">
@@ -16,10 +21,24 @@ const Header = () => {
           }
         </Link>
         <div>
-          <Link href="/" className="text-xs text-red">
+          <Link
+            href="/"
+            className={
+              currentRoute === "/"
+                ? "text-xs ml-3 text-red underline"
+                : "text-xs ml-3 text-red"
+            }
+          >
             ACCUEIL
           </Link>
-          <Link href="/about" className="text-xs ml-3 text-red">
+          <Link
+            href="/about"
+            className={
+              currentRoute === "/about"
+                ? "text-xs ml-3 text-red underline"
+                : "text-xs ml-3 text-red"
+            }
+          >
             À PROPOS
           </Link>
         </div>
