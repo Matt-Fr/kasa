@@ -16,7 +16,7 @@ const Header = () => {
             <Image
               src={logoKasa}
               alt="logo kasa"
-              className="w-36 items-center"
+              className=" w-36 md:w-52 items-center"
             ></Image>
           }
         </Link>
@@ -25,8 +25,8 @@ const Header = () => {
             href="/"
             className={
               currentRoute === "/"
-                ? "text-xs ml-3 text-red underline"
-                : "text-xs ml-3 text-red"
+                ? "text-xs ml-3 text-red md:text-lg md:ml-6 underline"
+                : "text-xs ml-3 text-red md:text-lg md:ml-6"
             }
           >
             ACCUEIL
@@ -35,8 +35,8 @@ const Header = () => {
             href="/about"
             className={
               currentRoute === "/about"
-                ? "text-xs ml-3 text-red underline"
-                : "text-xs ml-3 text-red"
+                ? "text-xs ml-3 text-red md:text-lg md:ml-6 underline"
+                : "text-xs ml-3 text-red md:text-lg md:ml-6"
             }
           >
             À PROPOS
