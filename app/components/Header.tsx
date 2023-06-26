@@ -10,13 +10,13 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="flex justify-between items-center">
+      <nav className="flex items-center justify-between">
         <Link href="/">
           {
             <Image
               src={logoKasa}
               alt="logo kasa"
-              className=" w-36 md:w-52 items-center"
+              className="items-center w-36 md:w-52"
             ></Image>
           }
         </Link>
@@ -25,8 +25,8 @@ const Header = () => {
             href="/"
             className={
               currentRoute === "/"
-                ? "text-xs ml-3 text-red md:text-lg md:ml-6 underline"
-                : "text-xs ml-3 text-red md:text-lg md:ml-6"
+                ? "text-xs ml-3 text-red hover:underline md:text-lg md:ml-6 underline"
+                : "text-xs ml-3 hover:underline text-red md:text-lg md:ml-6"
             }
           >
             ACCUEIL
@@ -35,8 +35,8 @@ const Header = () => {
             href="/about"
             className={
               currentRoute === "/about"
-                ? "text-xs ml-3 text-red md:text-lg md:ml-6 underline"
-                : "text-xs ml-3 text-red md:text-lg md:ml-6"
+                ? "text-xs ml-3 hover:underline text-red md:text-lg md:ml-6 underline"
+                : "text-xs ml-3 hover:underline text-red md:text-lg md:ml-6"
             }
           >
             À PROPOS
