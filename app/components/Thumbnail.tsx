@@ -10,8 +10,13 @@ interface ThumbnailProps {
 
 const Thumbnail: React.FC<ThumbnailProps> = ({ id, title, cover }) => {
   return (
-    <Link href={`/rent/${id}`} className="relative flex h-64 border-2">
-      <Image src={cover} alt={title} fill className="object-cover " />
+    <Link href={`/rent/${id}`} className="relative flex h-64 ">
+      <Image
+        src={cover}
+        alt={title}
+        fill
+        className="object-cover contrast-[.60]"
+      />
       <h3 className="absolute text-lg text-white">{title}</h3>
     </Link>
   );
