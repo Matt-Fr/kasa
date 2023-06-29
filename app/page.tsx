@@ -6,7 +6,7 @@ import data from "./data.json";
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <section className=" h-28 w-full relative flex items-center rounded-2xl overflow-hidden my-4 md:justify-center md:h-56 md:my-8">
+      <section className="relative flex items-center w-full my-4 overflow-hidden h-28 rounded-2xl md:justify-center md:h-56 md:my-8">
         <Image
           src={backgroundImg}
           alt="background image"
@@ -16,7 +16,7 @@ export default function Home() {
           Chez vous, partout et ailleurs
         </h1>
       </section>
-      <section className="">
+      <section className="grid ">
         {data.map((accommodation) => {
           const { id, title, cover } = accommodation;
 
