@@ -9,7 +9,7 @@ const Header = () => {
   const currentRoute = usePathname();
 
   return (
-    <header>
+    <header className="px-5 pt-5 md:px-7 md:pt-7 lg:px-10">
       <nav className="flex items-center justify-between">
         <Link href="/">
           {

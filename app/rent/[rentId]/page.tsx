@@ -44,7 +44,7 @@ const Page = () => {
     } = rent;
 
     return (
-      <>
+      <main className="px-5 md:px-7 lg:px-10">
         <section>
           <div>
             <h2>{title}</h2>
@@ -76,7 +76,7 @@ const Page = () => {
             />
           </div>
         </section>
-      </>
+      </main>
     );
   }
 };

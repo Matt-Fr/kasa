@@ -3,7 +3,7 @@ import Collapse from "../components/Collapse";
 
 const page = () => {
   return (
-    <main>
+    <main className="px-5 md:px-7 lg:px-10">
       <section>
         <Collapse
           title="Fiabilité"
