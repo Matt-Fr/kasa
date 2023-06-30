@@ -12,7 +12,7 @@ export default function Home() {
           alt="background image"
           className=" h-full w-full object-cover contrast-[.60]"
         />
-        <h1 className="absolute leading-6 w-48 text-[1.5rem] text-white ml-5 md:text-5xl  sm:w-auto sm:ml-0">
+        <h1 className="absolute leading-6 w-[13.4rem] text-[1.5rem] text-white ml-5 md:text-5xl  sm:w-auto sm:ml-0">
           Chez vous, partout et ailleurs
         </h1>
       </section>
