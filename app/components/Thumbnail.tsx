@@ -12,7 +12,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({ id, title, cover }) => {
   return (
     <Link
       href={`/rent/${id}`}
-      className="relative flex h-64 overflow-hidden rounded-xl"
+      className="relative flex h-64 overflow-hidden transition-transform rounded-xl hover:scale-105"
     >
       <Image
         src={cover}
