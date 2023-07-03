@@ -5,7 +5,7 @@ import data from "./data.json";
 
 export default function Home() {
   return (
-    <main className="flex flex-col px-5 md:px-7 lg:px-10">
+    <>
       <section className="relative flex items-center w-full mt-6 overflow-hidden h-28 rounded-2xl sm:justify-center md:h-56 md:mt-8">
         <Image
           src={backgroundImg}
@@ -25,6 +25,6 @@ export default function Home() {
           );
         })}
       </section>
-    </main>
+    </>
   );
 }
