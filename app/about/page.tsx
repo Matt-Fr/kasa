@@ -1,7 +1,7 @@
 import React from "react";
 import Collapse from "../components/Collapse";
 import Image from "next/image";
-import backgroungImg from "../assets/backgroundAbout.jpg";
+import bgAbout from "../assets/bgAbout.png";
 
 const page = () => {
   return (
@@ -9,7 +9,7 @@ const page = () => {
       <section className="w-full overflow-hidden rounded-2xl">
         <Image
           alt="backgroung image"
-          src={backgroungImg}
+          src={bgAbout}
           className="object-cover h-56 fill"
         ></Image>
       </section>
