@@ -6,7 +6,7 @@ import backgroungImg from "../assets/backgroundAbout.jpg";
 const page = () => {
   return (
     <>
-      <section className="w-full ">
+      <section className="w-full overflow-hidden rounded-2xl">
         <Image
           alt="backgroung image"
           src={backgroungImg}
