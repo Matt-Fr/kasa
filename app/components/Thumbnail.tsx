@@ -20,7 +20,9 @@ const Thumbnail: React.FC<ThumbnailProps> = ({ id, title, cover }) => {
         fill
         className="object-cover contrast-[.60]"
       />
-      <h3 className="absolute text-lg text-white bottom-5 left-5">{title}</h3>
+      <h3 className="absolute text-lg text-white bottom-5 left-5 right-5">
+        {title}
+      </h3>
     </Link>
   );
 };
