@@ -11,6 +11,7 @@ const page = () => {
           alt="backgroung image"
           src={bgAbout}
           className="object-cover w-full h-56"
+          placeholder="blur"
         ></Image>
       </section>
       <section className="flex flex-col items-center">
