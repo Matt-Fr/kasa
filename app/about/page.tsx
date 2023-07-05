@@ -13,7 +13,7 @@ const page = () => {
           className="object-cover h-56 fill"
         ></Image>
       </section>
-      <section>
+      <section className="flex flex-col items-center">
         <Collapse
           title="Fiabilité"
           info="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."

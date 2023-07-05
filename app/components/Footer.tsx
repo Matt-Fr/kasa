@@ -4,7 +4,7 @@ import logoFooter from "../assets/logoFooter.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center text-white bg-black h-52">
+    <footer className="flex flex-col items-center justify-center mt-8 text-white bg-black h-52">
       <Image
         src={logoFooter}
         alt="logo kasa footer"
