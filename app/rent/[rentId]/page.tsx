@@ -67,8 +67,8 @@ const Page = () => {
             <Image
               src={picture}
               alt={name}
-              width={100}
-              height={100}
+              width={128}
+              height={128}
               className="w-8 rounded-full md:w-16"
             />
           </div>
