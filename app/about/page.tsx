@@ -10,7 +10,7 @@ const page = () => {
         <Image
           alt="backgroung image"
           src={bgAbout}
-          className="object-cover h-56 fill"
+          className="object-cover w-full h-56"
         ></Image>
       </section>
       <section className="flex flex-col items-center">
