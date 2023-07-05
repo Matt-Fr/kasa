@@ -45,36 +45,47 @@ const Page = () => {
 
     return (
       <>
-        <section>
+        <section className="grid-cols-1 ">
+          <h2 className="text-lg md:text-4xl text-red">{title}</h2>
+          <span className="text-sm text-red md:text-lg">{location}</span>
           <div>
-            <h2>{title}</h2>
-            <span>{location}</span>
-            <div>
-              {tags.map((tag) => {
-                return <span key={tag}>{tag}</span>;
-              })}
-            </div>
+            {tags.map((tag) => {
+              return (
+                <span
+                  key={tag}
+                  className="px-6 py-1 mr-3 text-xs text-white rounded md:text-sm bg-red"
+                >
+                  {tag}
+                </span>
+              );
+            })}
           </div>
+
           <div>
-            <div>
-              <span>{name}</span>
-              <Image src={picture} alt={name} width={100} height={100} />
-            </div>
-            <div></div>
-          </div>
-        </section>
-        <section>
-          <div>
-            <Collapse title="Description" info={description} />
-          </div>
-          <div>
-            <Collapse
-              title="Équipements"
-              info={equipments.map((equipement) => {
-                return <span key={equipement}>{equipement}</span>;
-              })}
+            <span className="text-xs md:text-lg text-red">{name}</span>
+
+            <Image
+              src={picture}
+              alt={name}
+              width={100}
+              height={100}
+              className="w-8 rounded-full md:w-16"
             />
           </div>
+
+          <Collapse title="Description" info={description} />
+
+          <Collapse
+            title="Équipements"
+            info={equipments.map((equipement) => {
+              return (
+                <span key={equipement}>
+                  {equipement}
+                  <br />
+                </span>
+              );
+            })}
+          />
         </section>
       </>
     );
