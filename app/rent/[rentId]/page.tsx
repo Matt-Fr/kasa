@@ -84,9 +84,16 @@ const Page = () => {
             <Rating rating={rating} />
           </div>
 
-          <Collapse title="Description" info={description} />
+          <Collapse
+            title="Description"
+            info={description}
+            paraSize="md:text-lg"
+            titleSize="md:text-lg"
+          />
 
           <Collapse
+            paraSize="md:text-lg"
+            titleSize="md:text-lg"
             title="Équipements"
             info={equipments.map((equipement) => {
               return (
