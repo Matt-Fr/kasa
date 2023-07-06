@@ -4,6 +4,7 @@ import data from "../../data.json";
 import { useParams } from "next/navigation";
 import Collapse from "@/app/components/Collapse";
 import Image from "next/image";
+import Rating from "@/app/components/Rating";
 
 // Définition de l'interface Rent
 interface Rent {
@@ -16,7 +17,7 @@ interface Rent {
     name: string;
     picture: string;
   };
-  rating: string;
+  rating: number;
   location: string;
   equipments: string[];
   tags: string[];
@@ -72,6 +73,7 @@ const Page = () => {
               className="w-8 rounded-full md:w-16"
             />
           </div>
+          <Rating rating={rating} />
 
           <Collapse title="Description" info={description} />
 
