@@ -47,8 +47,12 @@ const Page = () => {
     return (
       <>
         <section className="grid-cols-1 ">
-          <h2 className="text-lg md:text-4xl text-red">{title}</h2>
-          <span className="text-sm text-red md:text-lg">{location}</span>
+          <div>carrousel</div>
+          <div>
+            <h2 className="text-lg md:text-4xl text-red">{title}</h2>
+            <span className="text-sm text-red md:text-lg">{location}</span>
+          </div>
+
           <div>
             {tags.map((tag) => {
               return (
@@ -62,18 +66,23 @@ const Page = () => {
             })}
           </div>
 
-          <div>
-            <span className="text-xs md:text-lg text-red">{name}</span>
+          <div className="flex flex-row-reverse items-center justify-between">
+            <div className="flex items-center">
+              <span className="w-24 mr-2 text-xs text-right md:text-lg text-red">
+                {name}
+              </span>
 
-            <Image
-              src={picture}
-              alt={name}
-              width={128}
-              height={128}
-              className="w-8 rounded-full md:w-16"
-            />
+              <Image
+                src={picture}
+                alt={name}
+                width={128}
+                height={128}
+                className="w-8 rounded-full md:w-16"
+              />
+            </div>
+
+            <Rating rating={rating} />
           </div>
-          <Rating rating={rating} />
 
           <Collapse title="Description" info={description} />
 
