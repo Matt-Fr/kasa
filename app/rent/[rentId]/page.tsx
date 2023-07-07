@@ -65,9 +65,9 @@ const Page = () => {
               })}
             </div>
           </section>
-          <div className="flex flex-row-reverse items-center justify-between">
-            <div className="flex flex-wrap items-center">
-              <span className="w-24 mr-2 text-xs text-right md:text-lg text-red">
+          <div className="flex flex-row-reverse items-center justify-between md:flex-col md:items-end ">
+            <div className="flex flex-wrap items-center ">
+              <span className="w-16 mr-2 text-xs text-right md:w-24 md:text-lg text-red">
                 {name}
               </span>
 
