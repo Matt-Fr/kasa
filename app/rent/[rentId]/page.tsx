@@ -46,28 +46,27 @@ const Page = () => {
 
     return (
       <>
-        <section className="grid-cols-1 ">
+        <section className="grid grid-cols-1">
           <div>carrousel</div>
-          <div>
+          <section>
             <h2 className="text-lg md:text-4xl text-red">{title}</h2>
             <span className="text-sm text-red md:text-lg">{location}</span>
-          </div>
 
-          <div>
-            {tags.map((tag) => {
-              return (
-                <span
-                  key={tag}
-                  className="px-6 py-1 mr-3 text-xs text-white rounded md:text-sm bg-red"
-                >
-                  {tag}
-                </span>
-              );
-            })}
-          </div>
-
+            <div className="">
+              {tags.map((tag) => {
+                return (
+                  <span
+                    key={tag}
+                    className="px-6 py-1 mr-3 text-xs text-white rounded md:text-sm bg-red"
+                  >
+                    {tag}
+                  </span>
+                );
+              })}
+            </div>
+          </section>
           <div className="flex flex-row-reverse items-center justify-between">
-            <div className="flex items-center">
+            <div className="flex flex-wrap items-center">
               <span className="w-24 mr-2 text-xs text-right md:text-lg text-red">
                 {name}
               </span>
