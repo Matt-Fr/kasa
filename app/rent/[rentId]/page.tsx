@@ -46,18 +46,18 @@ const Page = () => {
 
     return (
       <>
-        <section className="grid grid-cols-1">
+        <section className="grid grid-cols-1 gap-3">
           <div>carrousel</div>
           <section>
             <h2 className="text-lg md:text-4xl text-red">{title}</h2>
             <span className="text-sm text-red md:text-lg">{location}</span>
 
-            <div className="">
+            <div className="flex flex-wrap">
               {tags.map((tag) => {
                 return (
                   <span
                     key={tag}
-                    className="px-6 py-1 mr-3 text-xs text-white rounded md:text-sm bg-red"
+                    className="px-6 py-1 mt-3 mr-3 text-xs text-white rounded md:text-sm bg-red whitespace-nowrap"
                   >
                     {tag}
                   </span>

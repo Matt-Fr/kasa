@@ -8,6 +8,7 @@ interface CollapseProps {
   info: React.ReactNode;
   titleSize?: string;
   paraSize?: string;
+  margin?: string;
 }
 
 const Collapse: React.FC<CollapseProps> = ({
@@ -15,11 +16,14 @@ const Collapse: React.FC<CollapseProps> = ({
   info,
   titleSize,
   paraSize,
+  margin,
 }) => {
   const [showInfo, setShowInfo] = useState<boolean>(false);
 
   return (
-    <article className="w-full mt-5 overflow-hidden text-xs rounded-bl rounded-br md:mt-7 md:text-2xl bg-grey md:w-4/5">
+    <article
+      className={`w-full ${margin}  overflow-hidden text-xs rounded-bl rounded-br  md:text-2xl bg-grey `}
+    >
       <header
         className="flex items-center justify-between px-2 py-1 text-white rounded cursor-pointer bg-red"
         onClick={() => setShowInfo(!showInfo)}
