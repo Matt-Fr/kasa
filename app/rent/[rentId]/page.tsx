@@ -47,7 +47,7 @@ const Page = () => {
     return (
       <>
         <section className="grid grid-cols-1 gap-3 md:grid-cols-4 md:gap-8">
-          <Slider></Slider>
+          <Slider pictures={pictures}></Slider>
           <section className="md:col-span-3 ">
             <h2 className="text-lg md:text-4xl text-red">{title}</h2>
             <span className="text-sm text-red md:text-lg">{location}</span>
