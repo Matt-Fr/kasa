@@ -46,9 +46,9 @@ const Page = () => {
 
     return (
       <>
-        <section className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-8">
+        <section className="grid grid-cols-1 gap-3 md:grid-cols-4 md:gap-8">
           <div className="col-span-full">carrousel</div>
-          <section>
+          <section className="md:col-span-3 ">
             <h2 className="text-lg md:text-4xl text-red">{title}</h2>
             <span className="text-sm text-red md:text-lg">{location}</span>
 
@@ -66,7 +66,7 @@ const Page = () => {
             </div>
           </section>
           <div className="flex flex-row-reverse items-center justify-between md:flex-col md:items-end ">
-            <div className="flex flex-wrap items-center ">
+            <div className="flex flex-wrap items-center md:flex-nowrap">
               <span className="w-16 mr-2 text-xs text-right md:w-24 md:text-lg text-red">
                 {name}
               </span>
@@ -82,27 +82,29 @@ const Page = () => {
 
             <Rating rating={rating} />
           </div>
-
-          <Collapse
-            title="Description"
-            info={description}
-            paraSize="md:text-lg"
-            titleSize="md:text-lg"
-          />
-
-          <Collapse
-            paraSize="md:text-lg"
-            titleSize="md:text-lg"
-            title="Équipements"
-            info={equipments.map((equipement) => {
-              return (
-                <span key={equipement}>
-                  {equipement}
-                  <br />
-                </span>
-              );
-            })}
-          />
+          <div className=" md:col-span-2">
+            <Collapse
+              title="Description"
+              info={description}
+              paraSize="md:text-lg"
+              titleSize="md:text-lg"
+            />
+          </div>
+          <div className=" md:col-span-2">
+            <Collapse
+              paraSize="md:text-lg"
+              titleSize="md:text-lg"
+              title="Équipements"
+              info={equipments.map((equipement) => {
+                return (
+                  <span key={equipement}>
+                    {equipement}
+                    <br />
+                  </span>
+                );
+              })}
+            />
+          </div>
         </section>
       </>
     );
