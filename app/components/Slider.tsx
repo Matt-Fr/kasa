@@ -35,7 +35,7 @@ const Slider = ({ pictures }: SliderProps) => {
           position = "-translate-x-full opacity-0 -";
         }
         if (images.length === 1) {
-          position = "z-50 opacity-0";
+          position = "z-50 ";
         }
         return (
           <Image
