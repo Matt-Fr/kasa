@@ -41,7 +41,7 @@ const Slider = ({ pictures }: SliderProps) => {
           <Image
             fill
             src={picture}
-            alt=""
+            alt="apartment pic"
             key={picture}
             className={` object-cover transition-all duration-300 ease-linear ${position} `}
           />
