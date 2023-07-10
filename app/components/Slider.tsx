@@ -53,7 +53,7 @@ const Slider = ({ pictures }: SliderProps) => {
           setIndex(index - 1);
         }}
         alt="left arrow"
-        className="absolute transform rotate-90 -translate-y-1/2 cursor-pointer md:w-12 left-4 top-1/2"
+        className="absolute transform rotate-90 -translate-y-1/2 md:cursor-pointer md:w-12 left-4 top-1/2"
       ></Image>
       <Image
         onClick={() => {
@@ -61,7 +61,7 @@ const Slider = ({ pictures }: SliderProps) => {
         }}
         src={chevron}
         alt="right arrow"
-        className="absolute transform -rotate-90 -translate-y-1/2 cursor-pointer md:w-12 right-4 top-1/2"
+        className="absolute transform -rotate-90 -translate-y-1/2 md:cursor-pointer md:w-12 right-4 top-1/2"
       ></Image>
 
       <span className="absolute z-[-10] md:z-10 text-white  bottom-3">{`${
