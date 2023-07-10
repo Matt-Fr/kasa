@@ -15,8 +15,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({ id, title, cover }) => {
       className="relative flex items-center justify-center h-64 overflow-hidden transition-transform rounded-xl md:hover:scale-105"
     >
       <Image
-        width={300}
-        height={250}
+        fill
         src={cover}
         alt={title}
         className="object-cover contrast-[.60] min-w-full min-h-full"

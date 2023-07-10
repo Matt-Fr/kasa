@@ -39,8 +39,7 @@ const Slider = ({ pictures }: SliderProps) => {
         }
         return (
           <Image
-            width={500}
-            height={400}
+            fill
             src={picture}
             alt="apartment pic"
             key={picture}
