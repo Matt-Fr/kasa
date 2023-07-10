@@ -22,7 +22,7 @@ const Slider = ({ pictures }: SliderProps) => {
   }, [index, images]);
 
   return (
-    <div className="flex h-64 col-span-full md:h-[415px] overflow-hidden  rounded-2xl relative">
+    <div className="flex h-64 col-span-full md:h-[415px] overflow-hidden  rounded-2xl relative items-center justify-center">
       {images.map((picture, picindex) => {
         let position = " translate-x-full opacity-0";
         if (picindex === index) {
@@ -43,7 +43,7 @@ const Slider = ({ pictures }: SliderProps) => {
             src={picture}
             alt="apartment pic"
             key={picture}
-            className={` object-cover transition-all duration-300 ease-linear ${position} `}
+            className={` min-h-full min-w-full object-cover transition-all duration-300 ease-linear ${position} absolute`}
           />
         );
       })}
@@ -64,7 +64,7 @@ const Slider = ({ pictures }: SliderProps) => {
         className="absolute transform -rotate-90 -translate-y-1/2 cursor-pointer md:w-12 right-4 top-1/2"
       ></Image>
 
-      <span className="absolute z-[-10] md:z-10 text-white  bottom-3 left-1/2">{`${
+      <span className="absolute z-[-10] md:z-10 text-white  bottom-3">{`${
         index + 1
       } / ${images.length}`}</span>
     </div>
