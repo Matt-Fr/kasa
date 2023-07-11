@@ -40,6 +40,7 @@ const Slider = ({ pictures }: SliderProps) => {
         return (
           <Image
             fill
+            priority={true}
             src={picture}
             alt="apartment pic"
             key={picture}
