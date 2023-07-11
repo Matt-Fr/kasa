@@ -18,7 +18,8 @@ const Thumbnail: React.FC<ThumbnailProps> = ({ id, title, cover }) => {
         fill
         src={cover}
         alt={title}
-        className="object-cover contrast-[.60] min-w-full min-h-full"
+        style={{ objectFit: "cover" }}
+        className=" contrast-[.60] min-w-full min-h-full"
       />
       <h3 className="absolute text-lg text-white bottom-5 left-5 right-5">
         {title}

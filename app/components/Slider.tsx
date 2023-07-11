@@ -43,7 +43,8 @@ const Slider = ({ pictures }: SliderProps) => {
             src={picture}
             alt="apartment pic"
             key={picture}
-            className={` min-h-full min-w-full object-cover transition-all duration-300 ease-linear ${position} absolute`}
+            style={{ objectFit: "cover" }}
+            className={` min-h-full min-w-full transition-all duration-300 ease-linear ${position} absolute`}
           />
         );
       })}
