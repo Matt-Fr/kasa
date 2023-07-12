@@ -6,6 +6,8 @@ import Collapse from "@/app/components/Collapse";
 import Image from "next/image";
 import Rating from "@/app/components/Rating";
 import Slider from "@/app/components/Slider";
+import Errormsg from "@/app/components/Errormsg";
+
 // Définition de l'interface Rent
 interface Rent {
   id: string;
@@ -31,7 +33,7 @@ const Page = () => {
     | undefined;
 
   if (!rent) {
-    return <main>ERROR</main>;
+    return <Errormsg />;
   } else {
     const {
       title,
