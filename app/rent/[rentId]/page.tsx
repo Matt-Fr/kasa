@@ -8,7 +8,6 @@ import Rating from "@/app/components/Rating";
 import Slider from "@/app/components/Slider";
 import Errormsg from "@/app/components/Errormsg";
 
-// Définition de l'interface Rent
 interface Rent {
   id: string;
   title: string;
